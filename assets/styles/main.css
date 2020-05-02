@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background: brown;
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+blockquote {
+  width: 31.25rem;
+  max-width: 90%;
+  margin: 1rem auto;
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+  border-radius: 3px;
+  display: none;
+  -webkit-animation: bounce 2s linear infinite alternate;
+  animation: bounce 2s linear infinite alternate;
+}
+
+blockquote.visible {
+  display: block;
+}
+
+blockquote p {
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+blockquote cite {
+  display: block;
+  text-align: right;
+  margin: 2rem 3rem 0 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button {
+  display: block;
+  margin: 3rem auto 0 auto;
+  padding: 1rem 2rem;
+  background: brown;
+  border: 1px solid brown;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+button:hover {
+  background: rgb(207, 50, 50);
+  border: 1px solid rgb(207, 50, 50);
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
